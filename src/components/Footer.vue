@@ -36,12 +36,15 @@ export default {
   name: 'Footer',
   mounted() {
     const postName = window.location.pathname;
-    if (postName === '/') {
+    if (postName === '/' || postName.includes('/author/') || postName.includes('/tag/')) {
+      const ele = document.body.getElementsByClassName("utterances");
+      for(let i = 0; i < ele.length; i++) {
+        ele[i].remove();
+      }
       return
     }
 
     const githubIssue = document.createElement('script');
-    githubIssue.setAttribute('class',"testset2");
     githubIssue.setAttribute('src',"https://utteranc.es/client.js");
     githubIssue.setAttribute('repo',"namgunghyeon/my-website");
     githubIssue.setAttribute('issue-term', postName);

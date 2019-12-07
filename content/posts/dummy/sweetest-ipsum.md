@@ -7,7 +7,7 @@ author: gridsome
 tags:
     - food
     - dummy
-cover: https://images.unsplash.com/photo-1486427944299-d1955d23e34d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1920&h=1080&q=80
+cover:
 fullscreen: true
 ---
 

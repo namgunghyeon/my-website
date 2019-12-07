@@ -8,7 +8,7 @@ author: gridsome
 tags:
     - development
     - dummy
-cover: https://images.unsplash.com/photo-1509198397868-475647b2a1e5?ixlib=rb-1.2.1&auto=format&fit=crop&w=2560&h=1440&q=80
+cover:
 fullscreen: true
 ---
 

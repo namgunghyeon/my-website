@@ -3,7 +3,6 @@
     <div v-if="post.cover" class="post-cover overflow-hidden relative" :class="[post.fullscreen ? 'fullscreen' : 'max-h-cover']">
       <div class="max-w-xl md:max-w-3xl xl:max-w-4xl text-center px-6 absolute z-10" :class="[post.fullscreen ? 'flex flex-col items-center m-auto inset-0': 'mx-auto bottom-0 inset-x-0 pb-16']">
         <div class="m-auto">
-          <p class="text-white text-xs mb-2 uppercase">{{ post.timeToRead }} min read</p>
           <h1 class="text-3xl sm:text-5xl font-sans font-bold leading-tight mb-2 text-white">{{ post.title }}</h1>
           <p class="text-white">
             <span v-if="post.author">
@@ -21,7 +20,6 @@
     </div>
     <div v-else class="pt-24">
       <div class="max-w-xl md:max-w-3xl xl:max-w-4xl mx-auto text-center px-6">
-        <p class="text-gray-700 text-xs mb-2 uppercase">{{ post.timeToRead }} min read</p>
         <h1 class="text-3xl sm:text-5xl leading-tight font-sans font-bold mb-2 text-black">{{ post.title }}</h1>
         <p class="text-gray-700">
           <span v-if="post.author">

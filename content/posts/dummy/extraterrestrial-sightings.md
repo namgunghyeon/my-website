@@ -7,7 +7,7 @@ author: gridsome
 tags:
     - space
     - dummy
-cover: https://images.unsplash.com/photo-1446941303752-a64bb1048d54?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80
+cover:
 fullscreen: true
 ---
 

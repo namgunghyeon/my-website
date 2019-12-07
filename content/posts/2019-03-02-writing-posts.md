@@ -8,7 +8,7 @@ slug: writing-posts-markdown
 tags:
     - getting-started
     - content
-cover: https://images.unsplash.com/photo-1539815913963-92c9bfeb9d1f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1920&h=900&crop=bottom&q=80
+cover: https://example.com/path/to/cover/image.jpg
 ---
 
 The starter uses Gridsome's filesystem source plugin, which means blog posts are Markdown files that exist in the `/content/posts` directory.

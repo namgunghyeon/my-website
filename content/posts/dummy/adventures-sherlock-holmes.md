@@ -8,7 +8,7 @@ author: gridsome
 tags:
     - literature
     - dummy
-cover: https://images.unsplash.com/photo-1518010741929-b44e969137d3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1920&q=80
+cover:
 fullscreen: true
 ---
 

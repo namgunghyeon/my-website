@@ -8,7 +8,7 @@ author: gridsome
 tags:
     - art
     - dummy
-cover: https://images.unsplash.com/photo-1495669735947-8ebe33b049bf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1920&h=1080&q=80
+cover:
 fullscreen: true
 ---
 

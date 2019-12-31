@@ -36,7 +36,7 @@ export default {
   name: 'Footer',
   mounted() {
     const postName = window.location.pathname;
-    if (postName === '/' || postName.includes('/author/') || postName.includes('/tag/')) {
+    if (postName === '/' || postName.includes('/author/') || postName.includes('/tag/') || postName.match('/([0-9]+/)')) {
       const ele = document.body.getElementsByClassName("utterances");
       for(let i = 0; i < ele.length; i++) {
         ele[i].remove();

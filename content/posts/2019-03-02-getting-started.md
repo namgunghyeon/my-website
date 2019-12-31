@@ -1,13 +1,14 @@
 ---
 title: "Getting started"
-path: post4
+path: post1
 slug: getting-started-with-gridsome-and-bleda
 description: "Getting started with the Bleda blog starter theme for the Gridsome static site generator"
 date: 2019-03-01 14:43:24
-author: hyeon
+author: bleda
 tags:
     - getting-started
 cover:
+fullscreen: false
 ---
 
 **Bleda** is a minimal blog starter theme for Gridsome, inspired by the design of the [Attila](https://github.com/zutrinken/attila) Ghost theme, and styled with [Tailwind CSS](https://tailwindcss.com).

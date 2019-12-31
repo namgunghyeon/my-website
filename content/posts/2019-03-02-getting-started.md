@@ -7,7 +7,7 @@ date: 2019-03-01 14:43:24
 author: bleda
 tags:
     - getting-started
-cover:
+cover: ""
 fullscreen: false
 ---
 

@@ -32,7 +32,7 @@ fullscreen: true
   - JPA
   - Querydsl
 - AWS
-  - Elastick Beanstalk
+  - Elastic Beanstalk
   - Mysql
 ```
 

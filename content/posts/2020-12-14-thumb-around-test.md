@@ -6,8 +6,10 @@ description: "detox로 E2E 테스트"
 date: 2020-12-14 17:52:00
 author: hyeon namkung
 tags:
-    - 썸어라운드
+    - 썸어라운드 - 운동 기록
     - 개인 프로젝트
+    - React native
+    - Test
 cover: ""
 fullscreen: true
 ---
@@ -21,7 +23,7 @@ fullscreen: true
  Android용 폰이 없어 실제 사용하고 테스트 해보지 못해 아직 출시 하지 않았습니다.
 </div>
 
-## 🛠 기술 스택
+### 🛠 기술 스택
 
 ```markdown
 - React Native
@@ -34,11 +36,11 @@ fullscreen: true
   - Mysql
 ```
 
-## 👨🏻‍💻 테스트
+### 👨🏻‍💻 테스트
 회사에서는 Spring boot로 서버를 개발하고 Junit5로 테스트해 익숙하지만, 앱은 익숙하지 않고 컴포넌트 하나 하나 테스트하기에는 시간이 오래 걸리 것 같아 **[detox](https://github.com/wix/Detox)**를 사용해 **E2E 테스트** 로 진행하기로 했습니다.
 
 **[detox](https://github.com/wix/Detox)**
-- 설정
+- 설정 detoxrc.json
 ```json
 {
   "testRunner": "jest",
@@ -67,7 +69,7 @@ MODE=test
 VERSION=0.0.7
 ```
 
-- 테스트 코드
+- 테스트 코드 /e2e/test.js
 ```javascript
 describe('테스트', () => {
   it('나만의 운동을 추가할 때 이름 넣지 않음', async () => {
@@ -110,13 +112,13 @@ detox test -c ios
 </div>
 
 
-### 장점
+#### 장점
 <div class="bg-gray-100 border-l-4 border-gray-500 text-gray-900 leading-normal p-4 md:mx-6 mb-6">
   <p>E2E 테스트를 쉽게 할 수 있다.<p>
 </div>
 
 
-### 단점
+#### 단점
 <div class="bg-orange-100 border-l-4 border-orange-500 text-orange-900 leading-normal p-4 md:mx-6 mb-6">
   <p>직접 만든 컴포넌트가 아닐 경우 테스트가 어렵다.</p>
   <p>Xcode, IOS 버전이 변경될 경우 테스트가 안 될 수 있다. (빠르게 업테이트해준다.)</p>

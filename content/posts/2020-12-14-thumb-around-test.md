@@ -56,7 +56,7 @@ fullscreen: true
 }
 ```
 
-<div class="bg-green-100 border-l-4 border-green-500 text-green-900 leading-normal p-3 md:mx-6 mb-6" role="alert">
+<div class="bg-gray-100 border-l-4 border-gray-500 text-gray-900 leading-normal p-3 md:mx-6 mb-6">
   .env.test 설정 파일은 <strong>react-native-config</strong> 라이브러리를 사용해 빌드 타임에 사용
 </div>
 
@@ -79,9 +79,8 @@ describe('테스트', () => {
     await waitFor(element(by.text('운동 이름을 입력해주세요.')))
   })
 })
-
 ```
-<div class="bg-green-100 border-l-4 border-green-500 text-green-900 leading-normal p-3 md:mx-6 mb-6" role="alert">
+<div class="bg-gray-100 border-l-4 border-gray-500 text-gray-900 leading-normal p-3 md:mx-6 mb-6">
   앱을 사용하는 것 처럼 유저 시나리오를 작성해 테스트 코드를 작성
   <li> 구성 버튼을 누른다. </li>
   <li> 운동 관리 버튼을 누른다. </li>
@@ -92,18 +91,37 @@ describe('테스트', () => {
 
 
 - 👏 실행 화면
+```javascript
+detox test -c ios
+```
+
 ![iMac rear photo by Georgie Cobbs on Unsplash](/images/posts/detox-test-1.gif)
 
 
-#### detox로 테스트가 힘든 부분
+#### 🤦‍♂️ detox로 테스트가 힘든 부분
 - 소셜 로그인
-- 타이머
+- 타이머 기능
 - UI 라이브러리 (Picker, Date modal...)
 
-<div class="bg-green-100 border-l-4 border-green-500 text-green-900 leading-normal p-3 md:mx-6 mb-6" role="alert">
+<div class="bg-gray-100 border-l-4 border-gray-500 text-gray-900 leading-normal p-3 md:mx-6 mb-6">
   <p>컴포넌트에 testID값을 설정 하거나 화면에 보이는 텍스트를 찾아 터치해 테스트를 진행하게 되는데
   동일한 텍스트가 여러개 있거나, 텍스트가 살짝 가려지는 경우는 테스트 불가</p>
-  <p>직접 만든 컴포넌트가 아닐경우 테스트가 어려움</p>
+  <p>직접 만든 컴포넌트가 아닐 경우 테스트가 어려움</p>
 </div>
 
 
+### 장점
+<div class="bg-gray-100 border-l-4 border-gray-500 text-gray-900 leading-normal p-4 md:mx-6 mb-6">
+  <p>E2E 테스트를 쉽게 할 수 있다.<p>
+</div>
+
+
+### 단점
+<div class="bg-orange-100 border-l-4 border-orange-500 text-orange-900 leading-normal p-4 md:mx-6 mb-6">
+  <p>직접 만든 컴포넌트가 아닐 경우 테스트가 어렵다.</p>
+  <p>Xcode, IOS 버전이 변경될 경우 테스트가 안 될 수 있다. (빠르게 업테이트해준다.)</p>
+  <p>타이머 기능은 테스트가 안 된다.(타이머가 실행되면 테스트가 멈춘다)</p>
+</div>
+
+
+타이머는 [react-native-background-timer](https://github.com/ocetnik/react-native-background-timer)를 사용하는데 detox에서 timer를 실행하면 테스트 멈춤이 발생하는데 정확 이유를 찾지 못함.

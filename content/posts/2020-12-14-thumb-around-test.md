@@ -18,10 +18,6 @@ fullscreen: true
 미리 운동을 구성하고 구성된 운동을 불러와 운동을 기록하는 앱
 
 - [IOS](https://apps.apple.com/us/app/%EC%8D%B8%EC%96%B4%EB%9D%BC%EC%9A%B4%EB%93%9C-%EC%9A%B4%EB%8F%99-%EA%B8%B0%EB%A1%9D/id1538255500)
-- Android: 미출시
-<div class="bg-orange-100 border-l-4 border-orange-500 text-orange-900 leading-normal p-4 md:mx-6 mb-6" role="alert">
- Android용 폰이 없어 실제 사용하고 테스트 해보지 못해 아직 출시 하지 않았습니다.
-</div>
 
 ### 🛠 기술 스택
 
@@ -121,9 +117,5 @@ detox test -c ios
 #### 단점
 <div class="bg-orange-100 border-l-4 border-orange-500 text-orange-900 leading-normal p-4 md:mx-6 mb-6">
   <p>직접 만든 컴포넌트가 아닐 경우 테스트가 어렵다.</p>
-  <p>Xcode, IOS 버전이 변경될 경우 테스트가 안 될 수 있다. (빠르게 업테이트해준다.)</p>
-  <p>타이머 기능은 테스트가 안 된다.(타이머가 실행되면 테스트가 멈춘다)</p>
+  <p>IOS 버전이 올라갈 경우 정상적으로 동작하지 않을 수 있다.(하지만 detox를 빠르게 업테이트해준다.)</p>
 </div>
-
-
-타이머는 [react-native-background-timer](https://github.com/ocetnik/react-native-background-timer)를 사용하는데 detox에서 timer를 실행하면 테스트 멈춤이 발생하는데 정확 이유를 찾지 못함.

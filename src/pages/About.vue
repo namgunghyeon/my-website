@@ -2,27 +2,192 @@
   <Layout>
     <main>
       <header class="max-w-xl md:max-w-2xl xl:max-w-3xl mx-auto text-center px-6 pt-24">
-        <h1 class="text-4xl sm:text-5xl md:text-6xl font-sans font-bold mb-1">About</h1>
-        <p class="text-grey-dark text-lg sm:text-3xl">Lorem ipsum subtitle &hellip;</p>
+        <h1 class="text-4xl sm:text-5xl md:text-6xl font-sans font-bold mb-1">남궁현</h1>
       </header>
       <nav class="absolute top-0 left-0 z-20 mt-6 ml-6">
         <g-link to="/" class="text-gray-900 border-gray-400 text-sm border opacity-75 hover:opacity-100 rounded-full px-4 py-2 transition-opacity">&larr; Home</g-link>
       </nav>
       <article class="max-w-xl md:max-w-2xl xl:max-w-3xl mx-auto px-6 sm:px-12 pt-16 border-b border-gray-300 pb-10 mb-16">
+
+
         <div class="markdown text-lg leading-normal text-gray-700">
-          <p>This is your about page, say something about you or this blog.</p>
-          <p>You can edit this page in <code class="shiki-inline">src/pages/About.vue</code></p>
-          <hr>
-          <p>Now what are the possibilities of warp drive? Cmdr Riker's nervous system has been invaded by an unknown microorganism. The organisms fuse to the nerve, intertwining at the molecular level. That's why the transporter's biofilters couldn't extract it. The vertex waves show a K-complex corresponding to an REM state. The engineering section's critical. Destruction is imminent. Their robes contain ultritium, highly explosive, virtually undetectable by your transporter.</p>
-          <h2>Communication is not possible</h2>
-          <p>The shuttle has no power. Using the gravitational pull of a star to slingshot back in time? We are going to Starbase Montgomery for Engineering consultations prompted by minor read-out anomalies. Probes have recorded unusual levels of geological activity in all five planetary systems. Assemble a team. Look at records of the Drema quadrant. Would these scans detect artificial transmissions as well as natural signals?</p>
-          <p>Energy discharge in six seconds. Warp reactor core primary coolant failure. Fluctuate phaser resonance frequencies. Resistance is futile. Recommend we adjust shield harmonics to the upper EM band when proceeding. These appear to be some kind of power-wave-guide conduits which allow them to work collectively as they perform ship functions. Increase deflector modulation to upper frequency band.</p>
-          <h2>Deflector power at maximum</h2>
-          <p>Unidentified vessel travelling at sub warp speed, bearing 235.7. Fluctuations in energy readings from it, Captain. All transporters off. A strange set-up, but I'd say the graviton generator is depolarized. The dark colourings of the scrapes are the leavings of natural rubber, a type of non-conductive sole used by researchers experimenting with electricity. The molecules must have been partly de-phased by the anyon beam.</p>
-          <p>Sensors indicate human life forms 30 meters below the planet's surface. Stellar flares are increasing in magnitude and frequency. Set course for Rhomboid Dronegar 006, warp seven. There's no evidence of an advanced communication network. Total guidance system failure, with less than 24 hours' reserve power. Shield effectiveness has been reduced 12 percent. We have covered the area in a spherical pattern which a ship without warp drive could cross in the given time.</p>
-          <p>It indicates a synchronic distortion in the areas emanating triolic waves. The cerebellum, the cerebral cortex, the brain stem,  the entire nervous system has been depleted of electrochemical energy. Any device like that would produce high levels of triolic waves. These walls have undergone some kind of selective molecular polarization. I haven't determined if our phaser energy can generate a stable field. We could alter the photons with phase discriminators.</p>
-          <p>I have reset the sensors to scan for frequencies outside the usual range. By emitting harmonic vibrations to shatter the lattices. We will monitor and adjust the frequency of the resonators. He has this ability of instantly interpreting and extrapolating any verbal communication he hears. It may be due to the envelope over the structure, causing hydrogen-carbon helix patterns throughout. I'm comparing the molecular integrity of that bubble against our phasers.</p>
-          <p>Resistance is futile.</p>
+          <p class="text-1xl font-bold">어떻게 하면 좋은 구조로 개발하고 유지 보수를 쉽게 할 수 있는 고민하고 실행하는 개발자입니다. 그리고 제가 작성한 코드에는 테스트를 넣어, 신뢰성과 유지보수를 쉽게 하고 싶어합니다.</p>
+
+          <h2>Work Experience</h2>
+
+          <div class="markdown text-lg leading-normal text-gray-700">
+            <div class="grid grid-cols-3 gap-2">
+              <div class="col-span-1">
+                <h1 class="text-2xl font-bold">
+                  바이럴픽
+                </h1>
+                <div>Server Developer</div>
+                <p>2022. 08 ~ 현재</p>
+
+              </div>
+              <div class="col-span-2 overflow-auto">
+                <div>
+                  <h1 class="text-2xl font-bold">
+                    바이럴픽 해외 소싱 e-Commerce 개발
+                  </h1>
+                  <div class="text-1xl font-bold">Description</div>
+                  <p>2020. 01 ~ 2021. 08</p>
+                  <div class="text-1xl font-bold">What did I do.</div>
+                  <li>ERD 설계</li>
+                  <li>Order API</li>
+                  <li>Payment, Delivery</li>
+                  <li>Batch</li>
+                  <li>내부 관리 시스템</li>
+                  <p> </p>
+                  <div class="text-1xl font-bold">Tech Stack.</div>
+                  <li>AWS ECS, AWS SQS, Spring Boot, JPA, Mysql, Redis</li>
+                </div>
+              </div>
+            </div>
+
+            <hr>
+
+            <div class="grid grid-cols-3 gap-2">
+              <div class="col-span-1">
+                <h1 class="text-2xl font-bold">
+                  현대카드
+                </h1>
+                <div>Server Developer</div>
+                <p>2020. 01 ~ 2021. 08</p>
+
+              </div>
+              <div class="col-span-2 overflow-auto">
+                <div>
+                  <h1 class="text-2xl font-bold">
+                    현대카드 앱 추천 API
+                  </h1>
+                  <p>2020. 01 ~ 2021. 08</p>
+                  <div class="text-1xl font-bold">Description</div>
+                  <p>내용</p>
+                  <div class="text-1xl font-bold">What did I do.</div>
+                  <p>내용</p>
+                  <div class="text-1xl font-bold">Tech Stack.</div>
+                  <li>Spring Boot, Mysql, Couchbase, Redis </li>
+                </div>
+                <p> </p>
+                <div>
+                  <h1 class="text-2xl font-bold">
+                    현대카드 BigData Platform 운영
+                  </h1>
+                  <div class="text-1xl font-bold">Description</div>
+                  <p>내용</p>
+                  <div class="text-1xl font-bold">What did I do.</div>
+                  <p>내용</p>
+                  <div class="text-1xl font-bold">Tech Stack.</div>
+                  <p>Cloudera</p>
+                </div>
+              </div>
+            </div>
+
+            <hr>
+
+            <div class="grid grid-cols-3 gap-2">
+              <div class="col-span-1">
+                <h1 class="text-2xl font-bold">
+                  레코벨
+                </h1>
+                <div>Server Developer</div>
+                <p>2018. 04 ~ 2019. 12</p>
+
+              </div>
+              <div class="col-span-2 overflow-auto">
+                <div>
+                  <h1 class="text-2xl font-bold">
+                    타이드스퀘어 여행 추천 플랫폼 개발
+                  </h1>
+                  <div class="text-1xl font-bold">Description</div>
+                  <p>내용</p>
+                  <div class="text-1xl font-bold">What did I do.</div>
+                  <p>내용</p>
+                  <div class="text-1xl font-bold">Tech Stack.</div>
+                  <p>AWS, Spring Boot</p>
+                </div>
+                <p> </p>
+                <div>
+                  <h1 class="text-2xl font-bold">
+                    스타벅스 앱 추천 API 개발
+                  </h1>
+                  <div class="text-1xl font-bold">Description</div>
+                  <p>내용</p>
+                  <div class="text-1xl font-bold">What did I do.</div>
+                  <p>내용</p>
+                  <div class="text-1xl font-bold">Tech Stack.</div>
+                  <p>Spring Boot, Postgresql, Azkaban</p>
+                </div>
+                <p> </p>
+                <div>
+                  <h1 class="text-2xl font-bold">
+                    레코벨 추천 플랫폼 개발
+                  </h1>
+                  <div class="text-1xl font-bold">Description</div>
+                  <p>내용</p>
+                  <div class="text-1xl font-bold">What did I do.</div>
+                  <p>내용</p>
+                  <div class="text-1xl font-bold">Tech Stack.</div>
+                  <p>AWS S3, RedShift, Mysql, Kinesis, Spring Boot</p>
+                </div>
+              </div>
+            </div>
+
+            <hr>
+
+            <div class="grid grid-cols-3 gap-2">
+              <div class="col-span-1">
+                <h1 class="text-2xl font-bold">
+                  인코어드
+                </h1>
+                <div>Fullstack Developer</div>
+                <p>2014. 11 ~ 2018. 03</p>
+
+              </div>
+              <div class="col-span-2 overflow-auto">
+                <div>
+                  <h1 class="text-2xl font-bold">
+                    애너톡 DR 플랫폼 개발
+                  </h1>
+                  <div class="text-1xl font-bold">Description</div>
+                  <p>내용</p>
+                  <div class="text-1xl font-bold">What did I do.</div>
+                  <p>내용</p>
+                  <div class="text-1xl font-bold">Tech Stack.</div>
+                  <p>AWS Mysql, S3, NodeJs, Python</p>
+                </div>
+                <p> </p>
+                <div>
+                  <h1 class="text-2xl font-bold">
+                    에너톡 앱 API 개발
+                  </h1>
+                  <div class="text-1xl font-bold">Description</div>
+                  <p>내용</p>
+                  <div class="text-1xl font-bold">What did I do.</div>
+                  <p>내용</p>
+                  <div class="text-1xl font-bold">Tech Stack.</div>
+                  <p>AWS Mysql, EB, Cassandra, NodeJS</p>
+                </div>
+                <p> </p>
+                <div>
+                  <h1 class="text-2xl font-bold">
+                    내부 관리 시스템 개발
+                  </h1>
+                  <div class="text-1xl font-bold">Description</div>
+                  <p>내용</p>
+                  <div class="text-1xl font-bold">What did I do.</div>
+                  <p>내용</p>
+                  <div class="text-1xl font-bold">Tech Stack.</div>
+                  <p>AngularJS, React, NodeJS</p>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <h2>Skills</h2>
+          <h2>Personal Projects</h2>
         </div>
       </article>
       <site-footer class="pb-8 sm:pb-10" />

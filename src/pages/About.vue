@@ -11,7 +11,7 @@
 
 
         <div class="markdown text-lg leading-normal text-gray-700">
-          <p class="text-1xl font-bold">어떻게 하면 좋은 구조로 개발하고 유지 보수를 쉽게 할 수 있는 고민하고 실행하는 개발자입니다. 그리고 제가 작성한 코드에는 테스트를 넣어 신뢰성을 가지고 유지보수를 쉽게 하고 싶어합니다.</p>
+          <p class="text-1xl font-bold">어떻게 하면 좋은 구조로 개발하고 유지 보수를 쉽게 할 수 있는 고민하고 실행하는 개발자이며, 제가 작성한 코드에는 테스트를 넣어 신뢰성과 유지보수를 쉽게 하고 싶어합니다.</p>
 
           <h2>Work Experience</h2>
 

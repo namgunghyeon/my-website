@@ -64,10 +64,10 @@
                   </h1>
                   <p>2020. 04 ~ 2021. 08</p>
                   <div class="text-1xl font-bold">Description</div>
-                  <p>현대카드 앱 메인에 보이는 카드 형태의 추천 내용을 제공하는 API 개발과 운영을 담당했습니다.</p>
+                  <p>현대카드 앱에서 사용자 기반 추천 내용을 제공하는 API 개발과 운영을 담당했습니다.</p>
                   <p> </p>
                   <div class="text-1xl font-bold">What did I do.</div>
-                  <li>현대카드 앱에 접속했을 때 사용자에게 맞는 혜택 추천 API 개발</li>
+                  <li>현대카드 앱에서 사용자 기반 혜택 추천 API 개발</li>
                   <p> </p>
                   <div class="text-1xl font-bold">Tech Stack.</div>
                   <li>Spring Boot, Mysql, Couchbase, Redis </li>
@@ -83,7 +83,7 @@
                   <p>현대카드에 운영하고 있는 BigData Platform을 운영했습니다.</p>
                   <p> </p>
                   <div class="text-1xl font-bold">What did I do.</div>
-                  <li>HUE에 접속할 수 있는 OAuth2.0 기반 인증 시스템 개발</li>
+                  <li>내부 사용자가 HUE에 접속할 수 있도록 내부 시스템과 연동해 OAuth2.0 기반으로 인증 시스템 개발</li>
                   <li>내부 사용자 관리</li>
                   <li>시스템 모니터링 및 유지보수</li>
                   <p> </p>
@@ -113,10 +113,10 @@
                   <p>다이트스퀘어서 서비스하는 프리비아에서 여행 추천을 위한 추천 플랫폼 개발</p>
                   <p> </p>
                   <div class="text-1xl font-bold">What did I do.</div>
-                  <li>앞단에서 데이터를 받는 Receiver API 개발</li>
-                  <li>Kinesis to S3로 전달하는 데이터 파이프라인 구성</li>
-                  <li>AWS Function Step으로 추천 Batch 구성</li>
+                  <li>사용자 행동 이력 데이터를 받는 Receiver API 개발</li>
                   <li>여행 상품 추천 API 개발</li>
+                  <li>Kinesis to S3로 전달하는 데이터 파이프라인 구성</li>
+                  <li>AWS Function Step으로 추천 Batch Flow 구성</li>
                   <p> </p>
                   <div class="text-1xl font-bold">Tech Stack.</div>
                   <li>AWS Kinesis, Function Step, EB, Spring Boot</li>
@@ -128,12 +128,12 @@
                     스타벅스 앱 음료 추천 API
                   </h1>
                   <div class="text-1xl font-bold">Description</div>
-                  <p>스타벅스 앱에 접속했을 때 사용자에게 맞는 음료 추천 내용을 제공하는 API 개발 및 추천 Batch가 동작할 수 있도록 시스템 구성</p>
+                  <p>스타벅스 앱에서 사용자에게 맞는 음료 추천을 제공하는 API 개발 및 추천 Batch가 동작할 수 있도록 시스템 구성</p>
                   <p> </p>
                   <div class="text-1xl font-bold">What did I do.</div>
-                  <li>주문 데이터 수집를 위해 Fluentd를 사용해 Collector 서버 개발 </li>
+                  <li>주문 데이터 수집를 위해 Fluentd를 사용해 Data Collector 서버 구축</li>
+                  <li>추천 및 결과 Batch를 위한 Azkaban 환경 구축</li>
                   <li>음료 추천 API 개발</li>
-                  <li>추천 Batch를 위한 Azkaban 환경 구성</li>
                   <li>추천 결과를 확인하기 위한 Dashboard 개발</li>
                   <p> </p>
                   <div class="text-1xl font-bold">Tech Stack.</div>
@@ -146,12 +146,12 @@
                     레코벨 추천 플랫폼
                   </h1>
                   <div class="text-1xl font-bold">Description</div>
-                  <p>레코벨을 사용하는 고객사의 데이터를 수집해 고객사에 맞는 추천 서비스를 제공할 수 있는 추천 플랫폼을 개발했습니다.</p>
+                  <p>고객사의 데이터를 수집해 고객사 별로 추천 서비스를 제공할 수 있는 추천 플랫폼을 개발했습니다.</p>
                   <p> </p>
                   <div class="text-1xl font-bold">What did I do.</div>
-                  <li>앞단에서 고객사 데이터를 받는 Receiver API 개발</li>
+                  <li>고객사 데이터를 받는 Data Receiver API 개발</li>
                   <li>Kinesis를 사용한 데이터 집계 및 데이터를 저장하는 Merge API 개발</li>
-                  <li>추천 로직을 동작 시키는 Azkaban 운영</li>
+                  <li>추천 및 내부 리포트 Batch를 위한 Azkaban 운영</li>
                   <p> </p>
                   <div class="text-1xl font-bold">Tech Stack.</div>
                   <li>AWS S3, RedShift, Mysql, Kinesis, Spring Boot</li>

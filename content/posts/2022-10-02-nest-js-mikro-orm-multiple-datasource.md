@@ -1,6 +1,6 @@
 ---
 title: "Nestjs mikro-orm Multiple Datasource"
-path: post5
+path: post6
 slug: getting-started-with-gridsome-and-bleda
 description: "Nestjs에서 mikro-orm 멀티 데이터 소스 사용하기"
 date: 2022-10-02 23:59:00

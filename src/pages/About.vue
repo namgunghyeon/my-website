@@ -109,7 +109,7 @@
                     프리비아 여행 추천 플랫폼
                   </h1>
                   <div class="text-1xl font-bold">Description</div>
-                  <p>다이트스퀘어서 서비스하는 프리비아에서 여행 추천을 위한 추천 플랫폼 개발</p>
+                  <p>타이드스퀘가 제공하는 프리비아 여행 서비스에 추천 서비스를 위한 플랫폼 개발</p>
                   <p> </p>
                   <div class="text-1xl font-bold">What did I do.</div>
                   <li>사용자 행동 이력 데이터를 받는 Receiver API 개발</li>

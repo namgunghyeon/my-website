@@ -90,7 +90,7 @@ export class PhotoService {
 기존 DB에 쿼리를 요청하면 [에러](https://stackoverflow.com/questions/71117269/validation-error-using-global-entity-manager-instance-methods-for-context-speci) 가 발생했고
 
 > can't believe what I see in the replies here. For anybody coming here, please don't disable the validation (either via MIKRO_ORM_ALLOW_GLOBAL_CONTEXT env var or via allowGlobalContext configuration). Disabling the validation is fine only under very specific circumstances, mainly in unit tests.
-> 
+
 테스트거나 특수한 상황 아니면 설정하지 말라는 의미여서 설정에 contextName 이름을 지정하고 아래 처럼 사용하니, 더 이상 에러는 발생하지 않았습니다.
 ```typescript
 @Injectable()

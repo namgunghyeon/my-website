@@ -27,8 +27,12 @@ fullscreen: true
 > In recent years, thanks to Node.js, JavaScript has become the “lingua franca” of the web for both front and backend applications. This has given rise to awesome projects like Angular, React and Vue, which improve developer productivity and enable the creation of fast, testable, and extensible frontend applications. However, while plenty of superb libraries, helpers, and tools exist for Node (and server-side JavaScript), none of them effectively solve the main problem of - Architecture.
 Nest provides an out-of-the-box application architecture which allows developers and teams to create highly testable, scalable, loosely coupled, and easily maintainable applications. The architecture is heavily inspired by Angular.
 
-`Java` + `Spring Boot` 조합 위주로 개발했었는데, 이번 프로젝트부터 `NestJS`를 사용하게되었습니다. Spring MVC의 개념과 IOC, DI 내용을 알고 있어 NestJS를 이해하는데 어렵지 않았습니다.
-처음 어색했던 부분은 자유도가 높아 이렇게 동작해도 괜찮나?라는 생각이 들었고, Spring Boot에서 개발하는 것 처럼 어렵지 않게 개발할 수 있었습니다.
+`Java` + `Spring Boot` 조합 위주로 개발했었는데, 이번 프로젝트부터 `NestJS`를 사용하게되었습니다.
+
+Spring MVC의 개념과 비슷해 NestJS를 이해하는데 어렵지 않았고, Spring Boot에서 개발하는 것 처럼 어렵지 않게 개발할 수 있었습니다.
+개발하면서 자유도가 높아 이렇게 동작해도 괜찮나?라는 생각이 몇 번 들었지만, 프레임워크 자체는 잘 만들어진 것 같았습니다.
+
+조금씩 내부 동작 구조를 [NestJS Github](https://github.com/nestjs/nest)를 봐볼 예정입니다.
 
 ## 📂 **Mikro-orm**
 [mikro-orm](https://mikro-orm.io/)
@@ -41,7 +45,7 @@ Fundamentals
 
 ### Mikro-ORM은 선택하게된 계기
 Nest에서 사용할 수 있는 ORM은 크게 `Miko ORM`, `TypeORM`, `Sequelize`, `Prisma` 있었고, JPA와 비슷하고 업데이트가 빠른 `Miko ORM`를 사용하게 되었습니다.
-`Miko ORM`를 사용할 때 가장 크게 고민했던 부분은 아직 많이 사용하는 라이브러리는 아니였고, 계속 라이브러리 관리가 될까하는 의문이 있었습니다.
+`Miko ORM`를 사용할 때 가장 크게 고민했던 부분은 아직 많이 사용하는 라이브러리는 아니였고, 계속 라이브러리 관리가 될까?하는 의문이 있었습니다.
 약 2달간 사용하면서 아직은 크게 불편함을 느끼지 못하고 있고, 업데이트가 정말 빠르게 이뤄지고 있었습니다.
 
 ## 🌼 **Multiple DataSource 적용하기** 

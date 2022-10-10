@@ -23,6 +23,12 @@ fullscreen: true
 ```
 
 ## 🎡 **NestJS**
+[NestJS](https://nestjs.com/)
+> In recent years, thanks to Node.js, JavaScript has become the “lingua franca” of the web for both front and backend applications. This has given rise to awesome projects like Angular, React and Vue, which improve developer productivity and enable the creation of fast, testable, and extensible frontend applications. However, while plenty of superb libraries, helpers, and tools exist for Node (and server-side JavaScript), none of them effectively solve the main problem of - Architecture.
+Nest provides an out-of-the-box application architecture which allows developers and teams to create highly testable, scalable, loosely coupled, and easily maintainable applications. The architecture is heavily inspired by Angular.
+
+`Java` + `Spring Boot` 조합 위주로 개발했었는데, 이번 프로젝트부터 `NestJS`를 사용하게되었습니다. Spring MVC의 개념과 IOC, DI 내용을 알고 있어 NestJS를 이해하는데 어렵지 않았습니다.
+처음 어색했던 부분은 자유도가 높아 이렇게 동작해도 괜찮나?라는 생각이 들었고, Spring Boot에서 개발하는 것 처럼 어렵지 않게 개발할 수 있었습니다.
 
 ## 📂 **Mikro-orm**
 [mikro-orm](https://mikro-orm.io/)

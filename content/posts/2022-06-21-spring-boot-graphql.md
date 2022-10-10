@@ -54,7 +54,7 @@ allprojects {
 	java.sourceCompatibility = JavaVersion.VERSION_17
 
 	repositories {
-		mavenCentral()
+		mavenCentral()![](../../static/images/authors/default.png)
 		maven { url = uri("https://repo.spring.io/milestone") }
 		maven { url = uri("https://repo.spring.io/snapshot") }
 	}

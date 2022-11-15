@@ -16,8 +16,10 @@ fullscreen: true
 요즘 시계열 데이터를 다루고 있어서, 시계열 데이터를 지원하는 Postgres기반 Timescale DB를 봐보려고 합니다.
 
 ## Timescale DB란
-*Postgres for time-series* Postgres를 확장해 만든 시계열 Relational Database,
-Postgres에서 제공하는 기능과 time-series 데이터를 관리를 위한 새로운 기능을 제공하고 있습니다. 이 글에서는 Hypertable과 Chunk 설명과 간단한 테스트를 진행해보려고합니다.
+**Postgres for time-series**
+
+Postgres를 확장해 만든 시계열 Relational Database,
+Postgres에서 제공하는 기능과 time-series 데이터 관리를 위한 새로운 기능을 제공하고 있습니다. 이 글에서는 시계열 데이터 관리를 위한 Hypertable과 Chunk 설명과 간단한 테스트를 진행해보려고합니다.
 - 시계열: **일정 시간 간격으로 배치된 데이터**
 
 ### Hypertable
@@ -29,13 +31,6 @@ Hypertable은 사용자가 지정 혹은 기본 값으로 설정된 chunk_time_i
 
 chunk 사이즈는 성능과 밀접한 관계를 가지고 있어, 아래와 같이 가이드를 주고 있습니다.
 > We recommend setting the chunk_time_interval so that 25% of main memory can store one chunk, including its indexes, from each active hypertable. You can estimate the required interval from your data rate. For example, if you write approximately 2 GB of data per day and have 64 GB of memory, set the interval to 1 week. If you write approximately 10 GB of data per day on the same machine, set the time interval to 1 day.
-
-### PostgresSQL의 일반적인 파티셔닝과 비교
-고전적으로 시계열 데이터를 파티션로직(비즈니스 로직에 맞게)을 통해 처리할 수 있습니다. 파티션로직을 처리하기 위해서 제약 조건, 청크 인덱스, 데이터 보존 기간 등등 개발자가 신경써야하는 부분이 많이 존재합니다.
-
-TimescaleDB가 이 모든 작업(hypertable, chunk)을 처리해 개발자는 응용 프로그램에 더 집중할 수 있습니다.
-
-[data-retention](https://docs.timescale.com/timescaledb/latest/overview/core-concepts/data-retention/)
 
 ### 사용 용도
 시계열 데이터와 일반적인 데이터를 다루는 곳 모두 사용할 수 있습니다.

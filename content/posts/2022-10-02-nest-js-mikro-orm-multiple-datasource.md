@@ -50,7 +50,7 @@ Nest에서 사용할 수 있는 ORM은 크게 `Miko ORM`, `TypeORM`, `Sequelize`
 
 ## 🌼 **Multiple DataSource 적용하기** 
 ### Multiple DataSource가 필요했던 이유
-보틍은 하나의 DataSource를 바라보고 사용하는 경우가 많은데, 데이터를 괸리하는 주체가 달라 새로운 DB가 생성되었고, API에서는 두 개의 데이터 소스를 보고 개발을 하게되었습니다.
+보통은 하나의 DataSource를 바라보고 사용하는 경우가 많은데, 데이터를 관리하는 주체가 달라 새로운 DB가 생성되었고, API에서는 두 개의 데이터 소스를 보고 개발을 하게되었습니다.
 
 다행히 Mikro-ORM에서 [Multiple Database Connections](https://mikro-orm.io/docs/usage-with-nestjs#multiple-database-connections) 를 지원해 어렵지 않게 설정할 수 있었습니다.
 

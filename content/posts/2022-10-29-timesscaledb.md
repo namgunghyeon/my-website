@@ -1,13 +1,13 @@
 ---
-title: "TimesacledDB(작성중)"
+title: "Timesacled DB"
 path: post7
 slug: getting-started-with-gridsome-and-bleda
 description: "TimesacleDB 테스트"
 date: 2022-10-29 14:58:00
 author: hyeon namkung
 tags:
-    - TimesacleDB
-    - MDB
+    - Timesacle DB
+    - DB
 cover: ""
 fullscreen: true
 ---
@@ -33,7 +33,7 @@ chunk 사이즈는 성능과 밀접한 관계를 가지고 있어, 아래와 같
 ### PostgresSQL의 일반적인 파티셔닝과 비교
 고전적으로 시계열 데이터를 파티션로직(비즈니스 로직에 맞게)을 통해 처리할 수 있습니다. 파티션로직을 처리하기 위해서 제약 조건, 청크 인덱스, 데이터 보존 기간 등등 개발자가 신경써야하는 부분이 많이 존재합니다.
 
-TimescaleDB가 이 모든 작업을 처리해 개발자는 응용 프로그램에 더 집중할 수 있습니다.
+TimescaleDB가 이 모든 작업(hypertable, chunk)을 처리해 개발자는 응용 프로그램에 더 집중할 수 있습니다.
 
 [data-retention](https://docs.timescale.com/timescaledb/latest/overview/core-concepts/data-retention/)
 
@@ -44,7 +44,7 @@ TimescaleDB가 이 모든 작업을 처리해 개발자는 응용 프로그램�
 - 시간 경과에 따른 주식 자산 가격을 기록하는 데이터와 메타 데이터
 - 시간 경과에 따른 트럭 GPS 좌료를 기록하는 데이터와 메타 테이터
 
-TimescaleDB는 Postgres를 기반으로 하고 있어서 시계열 데이터와 일반적인 데이터를 저장하고  표준 SQL를 사용할 수 있다는 장점이 있습니다.
+TimescaleDB는 Postgres를 기반으로 하고 있어서 관계형 데이터베이스가 가지는 장점과 시계열 데이터를 접목해 사용할 수 있는 장점이 있습니다.
 
 ## 설치
 ```bash

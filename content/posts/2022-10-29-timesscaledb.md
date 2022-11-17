@@ -1,5 +1,5 @@
 ---
-title: "Timesacled DB"
+title: "Timescale DB"
 path: post7
 slug: getting-started-with-gridsome-and-bleda
 description: "TimesacleDB 테스트"

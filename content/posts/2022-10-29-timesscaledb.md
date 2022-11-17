@@ -221,7 +221,7 @@ WHERE ro.product_id = 'LnjvARIO'
   AND ro.order_at >= '2022-10-01 15:00:00'
   AND ro.order_at <= '2022-11-01 15:00:00';
 ```
-hypertable과 일반적인 테이블과 JOIN을 통해서 사용할 수 있습니다.
+hypertable과 일반적인 테이블을 JOIN으로 같이 사용할 수 있습니다.
 
 ### Query Explain
 
@@ -234,7 +234,7 @@ explain
       AND order_at <= '2022-11-01 15:00:00';
 ```
 **결과1**
-```bash
+```sql
 Gather  (cost=1000.00..81453.60 rows=129 width=67)
   Workers Planned: 2
   ->  Parallel Append  (cost=0.00..80440.70 rows=53 width=67)
@@ -252,7 +252,7 @@ Gather  (cost=1000.00..81453.60 rows=129 width=67)
 ```
 
 **쿼리2) product_id,order_id와  2022-10-01 부터 2022-11-01까지 조회**
-```bash
+```sql
 explain
     SELECT * FROM raw_order
     WHERE product_id = 'LnjvARIO'
@@ -262,7 +262,7 @@ explain
 ```
 
 **결과2**
-```bash
+```sql
 Gather  (cost=1000.00..85906.02 rows=5 width=66)
   Workers Planned: 2
   ->  Parallel Append  (cost=0.00..84905.52 rows=5 width=67)
@@ -280,7 +280,7 @@ Gather  (cost=1000.00..85906.02 rows=5 width=66)
 ```
 
 **쿼리3) product_id,order_id와 2022-10-15 부터 2022-11-01까지 조회**
-```
+```sql
 explain
     SELECT * FROM raw_order
     WHERE product_id = 'LnjvARIO'
@@ -290,7 +290,7 @@ explain
 ```
 
 **결과3**
-```bash
+```sql
   Workers Planned: 2
   ->  Parallel Append  (cost=0.00..75802.64 rows=3 width=66)
         ->  Parallel Seq Scan on _hyper_2_2_chunk  (cost=0.00..66363.96 rows=1 width=66)
@@ -301,7 +301,7 @@ explain
               Filter: ((order_at >= '2022-10-15 15:00:00+00'::timestamp with time zone) AND (order_at <= '2022-11-01 15:00:00+00'::timestamp with time zone) AND ((product_id)::text = 'LnjvARIO'::text) AND ((order_id)::text = 'p7tGXpjWu'::text))
 
 ```
-결과1,2,3 내용을 보면 hypertable을 만들 때 설정한 order_at기준으로 chunk된(기본 값 7일) 테이블을 조회해 하나의 결과로 만들고 있습니다.
+결과1,2,3 내용을 보면 hypertable을 만들 때 설정한 order_at기준으로 chunk된(기본 값 7일) 테이블들을 조회해 하나의 결과로 만들고 있습니다.
 
 ## 마무리
 Postgres 기반으로 시계열 데이터를 다루고 있어 Mysql, MariaDB에서 Migration하는 부분은 크게 어렵지 않아 보였고,
